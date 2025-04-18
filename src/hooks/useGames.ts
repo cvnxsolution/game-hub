@@ -8,11 +8,18 @@ export interface Game {
   name: string;
   background_image: string;
   metacritic: number;
+  parent_platforms: { platform: Platform }[];
 }
 
 interface FetchGameResponse {
   count: number;
   results: Game[];
+}
+
+export interface Platform {
+  id: number;
+  name: string;
+  slug: string;
 }
 
 const useGames = () => {
