@@ -5,6 +5,7 @@ import GameGrid from "./components/GameGrid";
 import GenreList from "./components/GenreList";
 
 const App = () => {
+  
   return (
     <Grid
       templateAreas={{

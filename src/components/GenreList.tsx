@@ -3,6 +3,7 @@ import useGenres from "../hooks/useGenres";
 import useData from "../hooks/useData";
 import { Genre } from "../hooks/useGenres";
 import {
+  Button,
   HStack,
   Image,
   List,
@@ -30,7 +31,9 @@ const GenreList = () => {
                 borderRadius={8}
                 src={getCroppedImageUrl(g.image_background)}
               />
-              <Text fontSize={"large"}>{g.name}</Text>
+              <Button variant={"link"} fontSize={"large"}>
+                {g.name}
+              </Button>
             </HStack>
           </ListItem>
         ))}
